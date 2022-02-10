@@ -24,7 +24,7 @@ function App() {
             alignItems: "center",
           }}
         >
-          <section className=" flex flex-col justify-between h-full overflow-hidden snap-always">
+          <section className="flex flex-col justify-between h-full overflow-hidden snap-always">
             <NavBar />
             <Hero />
             <Nav />
@@ -34,7 +34,6 @@ function App() {
         <ParallaxLayer
           offset={1}
           speed={2}
-          // style={{ backgroundColor: "#ff6d6d" }}
           className="bg-gray-500 opacity-20"
         />
 
@@ -53,7 +52,6 @@ function App() {
         <ParallaxLayer
           offset={2}
           speed={2}
-          // style={{ backgroundColor: "#ff6d6d" }}
           className="bg-gray-500 opacity-20"
         />
         <ParallaxLayer

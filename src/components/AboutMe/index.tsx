@@ -33,7 +33,7 @@ const AboutMe: React.FC<AboutMeProps> = () => {
         <div className="container px-4 mx-auto">
           <div className="flex flex-wrap justify-center -mx-4">
           <div className=" w-[22em] h-[32em] bg-yellow-300 ">
-            <div className=" w-[22em] h-[32em] hover:translate-x-2 hover:translate-y-2 transition bg-slate-600">
+            <div className="w-[22em] h-[32em] hover:translate-x-2 hover:translate-y-2 transition bg-slate-600">
                 </div>
           </div>
           </div>

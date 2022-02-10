@@ -58,7 +58,7 @@ const Nav: React.FC<NavProps> = () => {
         >
           <div className="flex items-center text-sm">
             <span className="mr-2 text-white font-medium hover:underline font-heading">
-              Education
+              Tech Stack
             </span>
             <svg
               width="17"

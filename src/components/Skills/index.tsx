@@ -7,10 +7,10 @@ const Project: React.FC<ProjectProps> = () => {
     <div className="my-20 h-screen">
       <div className="text-left mb-10 ml-[15em]">
           <h2 className="text-5xl font-bold font-heading text-gray-300">
-            <span className="border-b-4 border-yellow-300 py-3">Techno</span>logies Stack
+            <span className="border-b-4 border-yellow-300 py-3">Tech</span>nologies Stack
           </h2>
         </div>
-      <section className="flex justify-center items-center pb-20 lg:pb-40 lg:pt-20 2xl:py-40 overflow-hidden">
+      <section className="flex justify-center items-center pb-20 lg:pb-40 lg:pt-20 overflow-hidden">
         <div className="container  px-4 mx-auto flex justify-center">
           <div className="flex flex-wrap justify-center -mx-4">
             <div className="w-full px-4 mx-auto">

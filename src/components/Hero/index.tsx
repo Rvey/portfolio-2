@@ -11,9 +11,8 @@ const Hero: React.FC<HeroProps> = () => {
           <span>Hi I'am Redone</span>
           <span className="block md:text-7xl">full stack Web developer</span>
             </h2>
-        <a
+        <button
           className="inline-flex items-center py-4 px-6 bg-yellow-300 hover:bg-yellow-400 transform duration-200 "
-          href="#"
         >
           <svg
             className="mr-3"
@@ -29,7 +28,7 @@ const Hero: React.FC<HeroProps> = () => {
             ></path>
           </svg>
           <span className="text-sm uppercase font-heading">Contact me</span>
-        </a>
+        </button>
       </div>
     </div>
   );
