@@ -2,10 +2,12 @@ interface AboutMeProps {}
 
 const AboutMe: React.FC<AboutMeProps> = () => {
   return (
-    <div className="py-15 h-screen">
-      <h1 className="font-bold text-white text-center text-5xl pt-20">
-        About me
-      </h1>
+    <div className=" h-screen  my-20">
+     <div className="text-left mb-10 ml-[15em]">
+          <h2 className="text-5xl font-bold font-heading text-gray-300">
+            <span className="border-b-4 border-yellow-300 py-3">Abo</span>ut me
+          </h2>
+        </div>
       <section className="flex justify-center items-center pb-20 lg:pb-40 lg:pt-20 2xl:py-40 overflow-hidden">
      
         <div className="container  px-4 mx-auto">

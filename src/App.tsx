@@ -7,11 +7,12 @@ import NavBar from "./components/NavBar";
 import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Project from "./components/Projects";
 import Skills from "./components/Skills";
+import ContactMe from "./components/ContactMe";
 function App() {
   const parallax = useRef<IParallax>(null!);
   return (
     <div className="h-screen bg-black">
-      <Parallax pages={4} ref={parallax}>
+      <Parallax pages={5} ref={parallax}>
         <ParallaxLayer
           offset={0}
           speed={2.5}
@@ -81,6 +82,22 @@ function App() {
           }}
         >
           <Skills />
+        </ParallaxLayer>
+
+        <ParallaxLayer
+          offset={4}
+          speed={2}
+          className="bg-gray-500 opacity-20"
+        />
+        <ParallaxLayer
+          offset={4}
+          speed={0.5}
+          style={{
+            alignItems: "center",
+            color: "white",
+          }}
+        >
+          <ContactMe />
         </ParallaxLayer>
       </Parallax>
     </div>
