@@ -10,7 +10,7 @@ import ContactMe from "./components/ContactMe";
 import {Divider , DividerInv} from "./components/Divider";
 function App() {
   return (
-    <div className="bg-fixed body">
+    <div className="bg-fixed body ">
       <div className="fixed top-[25%] left-[2em]">
         <Nav />
       </div>
@@ -21,23 +21,23 @@ function App() {
       </div>
       
         <Divider />
-      <div className="bg-gray-100 ">
+      <div className="bg-gray-100 px-10 lg:px-0">
         <AboutMe />
       </div>
       <DividerInv />
-      <div className="bg-black bg-opacity-30">
+      <div className="bg-black bg-opacity-30 px-10 lg:px-0">
         <Project />
       <Divider />
       </div>
 
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 px-10 lg:px-0">
         <Skills />
       </div>
       <div className="hidden lg:block">
 
       <DividerInv />
       </div>
-      <div className="bg-black bg-opacity-30">
+      <div className="bg-black bg-opacity-30 px-10 lg:px-0">
         <ContactMe />
       </div>
     </div>
