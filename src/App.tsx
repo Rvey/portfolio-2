@@ -10,23 +10,22 @@ import ContactMe from "./components/ContactMe";
 import {Divider , DividerInv} from "./components/Divider";
 function App() {
   return (
-    <div className="">
-      <div className="fixed top-[25%] left-[2em] text-gray-400">
-
+    <div className="bg-fixed body">
+      <div className="fixed top-[25%] left-[2em]">
         <Nav />
       </div>
-      <div className="flex flex-col justify-between h-full snap-start bg-black">
+      <div className="flex flex-col justify-between h-full">
         <NavBar />
         <Hero />
         <div className="h-32"></div>
       </div>
       
         <Divider />
-      <div className="bg-gray-100">
+      <div className="bg-gray-100 ">
         <AboutMe />
       </div>
       <DividerInv />
-      <div className="bg-black">
+      <div className="bg-black bg-opacity-30">
         <Project />
       <Divider />
       </div>
@@ -38,7 +37,7 @@ function App() {
 
       <DividerInv />
       </div>
-      <div className="bg-black">
+      <div className="bg-black bg-opacity-30">
         <ContactMe />
       </div>
     </div>

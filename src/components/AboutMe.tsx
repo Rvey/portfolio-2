@@ -20,13 +20,13 @@ const AboutMe: React.FC<AboutMeProps> = () => {
             <p className="text-base">A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Laravel / PHP / VueJs and some other cool libraries and frameworks and Cross Platform Mobile Apps With React Native.</p>
           </div>
         </div>
-        <div className="flex justify-end sm:w-2/5 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+        <div className="flex lg:justify-end justify-center sm:w-2/5 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
         <div className="px-4">
           <div className="flex flex-wrap justify-center -mx-4">
-          {/* <div className=" w-[22em] h-[32em] bg-yellow-300 ">
-            <div className=" w-[22em] h-[32em] translate-x-2 translate-y-2 transition bg-slate-600">
+          <div className=" lg:w-[22em] lg:h-[32em] w-[18em] h-[22em] bg-yellow-300 m-auto ">
+            <div className=" lg:w-[22em] lg:h-[32em] w-[18em] h-[22em] translate-x-2 translate-y-2 transition bg-slate-600">
                 </div>
-          </div> */}
+          </div>
           </div>
         </div>
         </div>

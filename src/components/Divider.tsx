@@ -1,6 +1,6 @@
 export const Divider = () => {
   return (
-    <div className="skew-cc"></div> 
+    <div className="skew-cc "></div> 
   );
 };
 

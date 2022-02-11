@@ -13,7 +13,7 @@ const Nav: React.FC<NavProps> = () => {
           smooth={true}
         >
           <span className="mr-2 text-yellow-500 font-medium hover:underline font-heading rotate-90 ">
-            About Me
+            ABOUT ME
           </span>
           <div className="flex items-center text-sm"></div>
         </Link>
@@ -27,7 +27,7 @@ const Nav: React.FC<NavProps> = () => {
         >
           <div className="flex items-center text-sm">
             <span className="mr-2  font-medium hover:underline font-heading rotate-90  text-yellow-500">
-              Projects
+              PROJECTS
             </span>
           </div>
         </Link>
@@ -41,7 +41,7 @@ const Nav: React.FC<NavProps> = () => {
         >
           <div className="flex items-center text-sm">
             <span className="mr-2  font-medium hover:underline font-heading rotate-90 text-yellow-500">
-              TechStack
+              TECH STACK
             </span>
           </div>
         </Link>
@@ -55,8 +55,8 @@ const Nav: React.FC<NavProps> = () => {
         >
           <div className="flex items-center text-sm">
             <span className="mr-2  font-medium hover:underline font-heading rotate-90 text-yellow-500">
-              Contact Me
-            </span>
+          CONTACT ME            
+          </span>
           </div>
         </Link>
       </div>
