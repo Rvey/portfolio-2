@@ -1,5 +1,4 @@
 import { useState } from "react";
-import SideBar from "../SideBar";
 
 interface NavBarProps {
     
@@ -9,15 +8,6 @@ const NavBar: React.FC<NavBarProps> = () => {
     const [isOpen, setIsOpen] = useState(false);
     return ( 
         <nav className="relative flex mb-20 px-16 py-8 justify-between bg-transparent">
-        <div>
-          <a
-            className="inline-block text-xl text-white font-medium font-heading"
-            href="#"
-
-          >
-            Logo
-          </a>
-        </div>
         <button onClick={() => setIsOpen(!isOpen)
         } className="navbar-burger lg:hidden self-center">
           <svg

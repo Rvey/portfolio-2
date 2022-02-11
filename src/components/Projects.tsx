@@ -1,18 +1,17 @@
-import ProjectCard from "../Cards";
 
 interface ProjectProps {}
 
 const Project: React.FC<ProjectProps> = () => {
   return (
-    <div id="project" className=" py-20 h-screen">
-      <div className="text-left mb-10 ml-[15em]">
-        <h2 className="text-5xl font-bold font-heading text-gray-300">
-          <span className="border-b-4 border-yellow-300 py-3">Proj</span>ects
+    <div id="project" className=" lg:py-20 pt-20 h-screen">
+      <div className="text-left mb-10 lg:ml-[15em]">
+        <h2 className="text-5xl font-bold font-heading text-gray-300 mt-5">
+          <span className="border-b-4 border-yellow-300 py-3 ">Proj</span>ects
         </h2>
       
       </div>
       <section className="text-gray-400 body-font">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap">
+        <div className=" px-5 py-24 mx-auto flex flex-wrap">
           <div className="lg:w-2/3 mx-auto">
             <div className="flex flex-wrap w-full bg-gray-800 py-32 px-10 relative mb-4">
               <img
@@ -44,7 +43,7 @@ const Project: React.FC<ProjectProps> = () => {
               </div>
             </div>
             <div className="flex flex-wrap -mx-2">
-              <div className="px-2 w-1/2">
+              <div className="px-2 w-1/2 ">
                 <div className="flex flex-wrap w-full bg-gray-800 sm:py-24 py-16 sm:px-10 px-6 relative">
                   <img
                     alt="gallery"
@@ -82,12 +81,12 @@ const Project: React.FC<ProjectProps> = () => {
                     className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
                     src="https://dummyimage.com/542x420"
                   />
-                  <div className="text-center relative z-10 w-full">
+                  <div className="text-center w-full">
                     <h2 className="text-xl text-white font-medium title-font mb-2">
                       Shooting Stars
                     </h2>
                     <p className="leading-relaxed">
-                      Skateboard +1 mustache fixie paleo lumbersexual.
+                      Skateboard 
                     </p>
                     <a className="mt-3 text-yellow-300 inline-flex items-center">
                       Learn More

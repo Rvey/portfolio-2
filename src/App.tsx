@@ -4,111 +4,43 @@ import AboutMe from "./components/AboutMe";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import NavBar from "./components/NavBar";
-import { IParallax, Parallax, ParallaxLayer } from "@react-spring/parallax";
 import Project from "./components/Projects";
 import Skills from "./components/Skills";
 import ContactMe from "./components/ContactMe";
+import {Divider , DividerInv} from "./components/Divider";
 function App() {
-  // const parallax = useRef<IParallax>(null!);
   return (
-    <div className="h-screen bg-black snap-y snap-always	">
-      {/* <Parallax pages={5}>
-      <ParallaxLayer
-          offset={0}
-          speed={2}
-          className="bg-gray-500 opacity-20"
-        />
-        <ParallaxLayer
-          offset={0}
-          speed={2.5}
-          // className="snap-normal"
-          // onClick={() => parallax.current.scrollTo(1)}
-        > */}
-      <section className="flex flex-col justify-between h-full snap-start">
+    <div className="">
+      <div className="fixed top-[25%] left-[2em] text-gray-400">
+
+        <Nav />
+      </div>
+      <div className="flex flex-col justify-between h-full snap-start bg-black">
         <NavBar />
         <Hero />
-        <Nav />
-      </section>
-    
-      {/* </ParallaxLayer> */}
-
-      {/* <ParallaxLayer
-          offset={1}
-          speed={2}
-          className="bg-gray-500 opacity-20"
-        />
-
-        <ParallaxLayer
-          offset={1}
-          speed={0.5}
-          // onClick={() => parallax.current.scrollTo(2)}
-          style={{
-            alignItems: "center",
-            color: "white",
-          }}
-        > */}
-        
-      <div className="snap-start bg-gray-100">
+        <div className="h-32"></div>
+      </div>
+      
+        <Divider />
+      <div className="bg-gray-100">
         <AboutMe />
       </div>
- 
-      {/* </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2}
-          speed={2}
-          className="bg-gray-500 opacity-20"
-        /> */}
-      {/* <ParallaxLayer
-          offset={2}
-          speed={0.5}
-          // onClick={() => parallax.current.scrollTo(3)}
-          style={{
-            alignItems: "center",
-            // color: "white",
-          }}
-        > */}
+      <DividerInv />
       <div className="bg-black">
         <Project />
+      <Divider />
       </div>
-      {/* </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={3}
-          speed={2}
-          className="bg-gray-500 opacity-20"
-        />
-        <ParallaxLayer
-          offset={3}
-          speed={0.5}
-          style={{
-            alignItems: "center",
-            // color: "white",
-          }}
-        > */}
       <div className="bg-gray-100">
         <Skills />
       </div>
-      {/* </ParallaxLayer>
+      <div className="hidden lg:block">
 
-        <ParallaxLayer
-          offset={4}
-          speed={2}
-          className="bg-gray-500 opacity-20"
-        /> */}
-      {/* <ParallaxLayer
-          offset={4}
-          speed={0.5}
-          style={{
-            alignItems: "center",
-            // color: "white",
-          }}
-        > */}
+      <DividerInv />
+      </div>
       <div className="bg-black">
         <ContactMe />
       </div>
-      {/* </ParallaxLayer>
-      </Parallax> */}
     </div>
   );
 }
