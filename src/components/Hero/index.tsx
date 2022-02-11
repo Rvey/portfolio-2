@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
@@ -11,8 +13,9 @@ const Hero: React.FC<HeroProps> = () => {
           <span>Hi I'am Redone</span>
           <span className="block md:text-7xl">full stack Web developer</span>
             </h2>
-        <button
-          className="inline-flex items-center py-4 px-6 bg-yellow-300 hover:bg-yellow-400 transform duration-200 "
+        <Link
+          className="inline-flex items-center py-4 px-6 bg-yellow-300 hover:bg-yellow-400 transform duration-200 cursor-pointer"
+          to="contact" spy={true} smooth={true}
         >
           <svg
             className="mr-3"
@@ -28,7 +31,7 @@ const Hero: React.FC<HeroProps> = () => {
             ></path>
           </svg>
           <span className="text-sm uppercase font-heading">Contact me</span>
-        </button>
+        </Link>
       </div>
     </div>
   );

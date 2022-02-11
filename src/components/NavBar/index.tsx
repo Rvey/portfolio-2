@@ -34,13 +34,8 @@ const NavBar: React.FC<NavBarProps> = () => {
         </button>
         <div className="hidden lg:flex items-center">
           <div className="flex items-center">
-            <a
-              className="inline-block text-sm text-white hover:underline font-heading"
-              href="#"
-            >
-              Contact me
-            </a>
-            <span className="mx-2 text-white">/</span>
+           
+        
             <a
               className="inline-block text-sm text-white hover:underline font-heading"
               href="#"

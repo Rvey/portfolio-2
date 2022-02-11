@@ -9,29 +9,30 @@ import Project from "./components/Projects";
 import Skills from "./components/Skills";
 import ContactMe from "./components/ContactMe";
 function App() {
-  const parallax = useRef<IParallax>(null!);
+  // const parallax = useRef<IParallax>(null!);
   return (
-    <div className="h-screen bg-black">
-      <Parallax pages={5} ref={parallax}>
+    <div className="h-screen bg-black snap-y snap-always	">
+      {/* <Parallax pages={5}>
+      <ParallaxLayer
+          offset={0}
+          speed={2}
+          className="bg-gray-500 opacity-20"
+        />
         <ParallaxLayer
           offset={0}
           speed={2.5}
-          className="snap-normal"
-          onClick={() => parallax.current.scrollTo(1)}
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <section className="flex flex-col justify-between h-full overflow-hidden snap-always">
-            <NavBar />
-            <Hero />
-            <Nav />
-          </section>
-        </ParallaxLayer>
+          // className="snap-normal"
+          // onClick={() => parallax.current.scrollTo(1)}
+        > */}
+      <section className="flex flex-col justify-between h-full snap-start">
+        <NavBar />
+        <Hero />
+        <Nav />
+      </section>
+    
+      {/* </ParallaxLayer> */}
 
-        <ParallaxLayer
+      {/* <ParallaxLayer
           offset={1}
           speed={2}
           className="bg-gray-500 opacity-20"
@@ -40,31 +41,37 @@ function App() {
         <ParallaxLayer
           offset={1}
           speed={0.5}
-          onClick={() => parallax.current.scrollTo(2)}
+          // onClick={() => parallax.current.scrollTo(2)}
           style={{
             alignItems: "center",
             color: "white",
           }}
-        >
-          <AboutMe />
-        </ParallaxLayer>
+        > */}
+        
+      <div className="snap-start bg-gray-100">
+        <AboutMe />
+      </div>
+ 
+      {/* </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
           speed={2}
           className="bg-gray-500 opacity-20"
-        />
-        <ParallaxLayer
+        /> */}
+      {/* <ParallaxLayer
           offset={2}
           speed={0.5}
-          onClick={() => parallax.current.scrollTo(3)}
+          // onClick={() => parallax.current.scrollTo(3)}
           style={{
             alignItems: "center",
-            color: "white",
+            // color: "white",
           }}
-        >
-          <Project />
-        </ParallaxLayer>
+        > */}
+      <div className="bg-black">
+        <Project />
+      </div>
+      {/* </ParallaxLayer>
 
         <ParallaxLayer
           offset={3}
@@ -76,28 +83,32 @@ function App() {
           speed={0.5}
           style={{
             alignItems: "center",
-            color: "white",
+            // color: "white",
           }}
-        >
-          <Skills />
-        </ParallaxLayer>
+        > */}
+      <div className="bg-gray-100">
+        <Skills />
+      </div>
+      {/* </ParallaxLayer>
 
         <ParallaxLayer
           offset={4}
           speed={2}
           className="bg-gray-500 opacity-20"
-        />
-        <ParallaxLayer
+        /> */}
+      {/* <ParallaxLayer
           offset={4}
           speed={0.5}
           style={{
             alignItems: "center",
-            color: "white",
+            // color: "white",
           }}
-        >
-          <ContactMe />
-        </ParallaxLayer>
-      </Parallax>
+        > */}
+      <div className="bg-black">
+        <ContactMe />
+      </div>
+      {/* </ParallaxLayer>
+      </Parallax> */}
     </div>
   );
 }
